@@ -13,12 +13,12 @@ var doStuff = function(req, res) {
   // and the body of the response will be given
   // in plain text
 
-  res.writeHead(200, {"Content-Type": "text/plain"});
+  res.writeHead(200, {"Content-Type": "text/html"});
 
   // Writes the body of the response with the content
   // 'Hello World'
 
-  res.write("Hello World");
+  res.write("<html><body><h1>Hello World</h1></body></html>");
 
   // Send the response back
 
